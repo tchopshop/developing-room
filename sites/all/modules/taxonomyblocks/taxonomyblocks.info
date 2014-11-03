@@ -1,0 +1,6 @@
+name = Advanced Taxonomy Blocks
+description = Advanced Taxonomy Blocks
+core = 7.x
+version = "7.x-1.0-dev"
+files[] = taxonomyblocks.module
+files[] = taxonomyblocks.install

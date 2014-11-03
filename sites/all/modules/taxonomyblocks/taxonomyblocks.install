@@ -1,0 +1,104 @@
+<?php
+/**
+ * @file taxonomyblocks.install
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function taxonomyblocks_schema() {
+  $schema['tb_added_list'] = array(
+      'description' => t('Stores information about which blocks exist, which vocabs they use etc...'),
+      'fields'      => array(
+        'tb_id'       => array(
+          'type'      => 'serial',
+          'unsigned'  => TRUE,
+          'not null'  => TRUE,
+        ),
+        'block_title' => array(
+          'type'      => 'varchar',
+          'length'    => 255,
+          'not null'  => FALSE,
+        ),
+        'custom'      => array(
+          'type'      => 'int',
+          'unsigned'  => TRUE,
+          'not null'  => TRUE,
+          'default'   => 0,
+        ),
+        'omit_tids' => array(
+          'type'      => 'varchar',
+          'length'    => 255,
+          'not null'  => FALSE,
+        ),
+        'open_tids' => array(
+          'description'   => t('Comma-separated list of tids which are expanded by default'),
+          'type'          => 'varchar',
+          'length'        => 255,
+          'not null'      => FALSE,
+        ),
+      ),
+      'primary key' => array('tb_id'),  
+  );
+  $schema['tb_customized'] = array(
+    'description'   => t('Stores customization information'),
+    'fields'        => array(
+      'tb_id'         => array(
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+      'vid'           => array(
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ),
+      'custom_title'   => array(
+        'type'        => 'varchar',
+        'length'      => 255,
+        'not null'    => FALSE,
+      ),
+      'path_pattern'   => array(
+        'type'        => 'varchar',
+        'length'      => 255,
+        'not null'    => FALSE,
+      ),
+      'title_pattern'   => array(
+        'type'        => 'varchar',
+        'length'      => 255,
+        'not null'    => FALSE,
+      ),
+      'counter'       => array(
+        'type'        => 'varchar',
+        'length'      => 255,
+        'not null'    => FALSE,
+      ),
+      'weight'        => array(
+        'type'        => 'int',
+        'not null'    => TRUE,
+        'default'     => 0,
+      ),
+       'enabled'        => array(
+        'type'        => 'int',
+        'not null'    => TRUE,
+        'default'     => 1,
+      ),
+    ),
+  );
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ */
+function taxonomyblocks_install() {
+	
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function taxonomyblocks_uninstall() {
+	
+}

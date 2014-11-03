@@ -1,0 +1,5 @@
+name = Hideblock
+description = Hides unwanted blocks from the blocklist
+core = 7.x
+files[] = hideblock.module
+files[] = hideblock.install

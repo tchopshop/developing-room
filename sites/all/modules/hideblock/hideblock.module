@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Hides various blocks from other users
+ */
+/**
+ * Implements of hook_menu()
+ */
+function hideblock_menu() {
+    $items['admin/config/hideblock'] = array(
+        'title' => 'Hide blocks',
+        'description' => 'Hide any unwanted blocks from the blocklist',
+        'position' => 'right',
+        'weight' => -5,
+        'page callback' => 'system_admin_menu_block_page',
+        'access arguments' => array( 'administer site configuration'),
+        'type' => MENU_NORMAL_ITEM,
+        'file' => 'system.admin.inc',
+        'file path' => drupal_get_path('module', 'system'),
+    );
+    $items['admin/config/hideblock/settings'] = array(
+        'title' => 'Hide block settings',
+        'description' => 'Change which items in block list are hidden from evil eyes',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('hideblock_admin_settings'),
+        'access arguments' => array('administer site configuration'),
+        'type' => MENU_NORMAL_ITEM,
+        'file' => 'hideblock.admin.inc',
+    );
+    return $items;
+}
+
+/*
+ * Implements of hook_block_list_alter
+ */
+function hideblock_form_block_admin_display_form_alter(&$form, &$form_state, $form_id) {
+    global $user;
+    if ($user->uid != 1) {
+    $result = db_query('SELECT delta FROM {hideblock}');
+    foreach ($result as $key => $block) {
+        unset($form['blocks'][$block->delta]);
+    }
+    return $form;
+    }
+}

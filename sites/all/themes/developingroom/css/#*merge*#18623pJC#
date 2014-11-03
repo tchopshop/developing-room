@@ -1,0 +1,89 @@
+/**
+ * Use this file to conditionally override styles for devices.
+ * If you adjust the media queries in the theme settings you should
+ * adjust them here so they match.
+ */
+
+/* Smartphone portrait */
+@media only screen and (max-width:320px) {
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+}
+
+/* Smartphone landscape */
+@media only screen and (min-width:321px) and (max-width:480px) {
+
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+
+}
+
+/* Tablet portrait */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+.columns-inner {
+	position: relative;
+}
+
+.region-sidebar-first {
+margin-left: 0!important;
+}
+
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+
+
+}
+
+/* Tablet landscape */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+.section-about-us .region-sidebar-second {
+	width: 50%;
+	margin-left: -50%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 50%;
+margin-left: 0;
+}
+
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+
+}
+
+/* Standard layout */
+@media only screen and (min-width:1025px) {
+}

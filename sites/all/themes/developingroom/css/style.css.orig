@@ -1,0 +1,342 @@
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/League_Gothic-webfont.woff') format('woff'),
+        url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+        url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+body {
+    background: url(images/bg.png) repeat;
+    font-family: "Droid Serif", serif;
+    color: #5B5B5B;
+font-size: 12px;
+}
+
+hr {
+    border-top: 1px dotted #ddd;
+    background: #fff;
+}
+
+#topbar {
+    background: #3b3b3b;
+    border-bottom: 1px solid #6a6a6a;
+    height: 12px;
+}
+#header-wrapper {
+<<<<<<< HEAD
+    margin: 0 0 10px 0;
+    padding: 30px 10px 5px;
+    background: url(images/header.jpg) repeat;
+}
+h1 {
+	font-size: 2.4em;
+	line-height: 1.1em;
+	font-family: 'Droid Serif', serif;
+	font-weight: normal;
+}
+
+h1#page-title {
+	font-size: 2.8em;
+	font-family: 'Voltaire', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	font-weight: normal;
+	margin-left: 10px;
+	margin-bottom: 20px;
+=======
+    margin: 0;
+    padding: 30px 10px 5px;
+    background: url(images/header.jpg) repeat;
+}
+#secondary-content-wrapper {
+	background-color: #3B3B3B;
+	margin-bottom: 10px;
+}
+h1 {
+	font-size: 2.4em;
+	line-height: 1.1em;
+	font-family: 'LeagueGothicRegular', 'Bebas Neue','Arial Narrow', Arial, sans-serif;
+	font-weight: normal;
+		text-transform: uppercase;
+}
+
+h1#page-title {
+	font-size: 3em;
+	font-family: 'LeagueGothicRegular', 'Bebas Neue','Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px;
+	color: white;
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+}
+.sidebar h1 {
+	font-size: 1.6em;	
+	line-height: 1.5em;
+}
+
+h2 {
+font-family: 'Droid Serif', serif;
+text-transform: uppercase;
+font-size: 14px;
+margin: 0 0 10px 0;
+font-weight: bold;
+display: block;
+padding: 0 0 5px 0;
+border-bottom: 1px dotted #B2B2B2;}
+
+h3 {
+font-family: 'Droid Sans', sans-serif;
+font-size: 12px;
+}
+
+h3 a {
+color: gray;
+text-decoration: none;
+font-weight: normal;
+text-transform: uppercase;
+}
+
+
+<<<<<<< HEAD
+.block-views .block-inner, .blocka, .blocka-image {
+=======
+.block-views .block-inner, .blocka, .blocka-image, .page-blog article {
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+	background: white;
+	color: #222;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	padding: 20px;
+}
+.blocka-image {
+	padding: 0;
+	margin-bottom: 20px;
+}
+.blocka {
+	margin-bottom: 20px;
+}
+
+#content-wrapper .view-content ul {
+	margin: 0;
+	list-style: none;
+}
+
+.field-collection-view {
+	margin: 0;
+}
+
+/*
+#content-wrapper a {
+	color: #C33;
+	margin: -10px 0 0 0;
+	font-weight: bold;
+	text-decoration: none;
+}
+*/
+
+a {
+	color: #CC3333;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+.field-name-field-participant-photo {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#block-views-event-blocks-block-2 .block-inner {
+	background-color: #C33;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	color: white;
+	min-height: 300px;
+	font-size: 18px;
+font-weight: normal;
+}
+
+.field-name-field-event-image img {
+border-radius: 3px 3px 0 0;
+}
+.field-name-field-event-desc {
+	padding: 20px;
+}
+
+.views-field-field-event-date {
+	font-size: 1.3em;
+	margin-bottom: 20px;
+}
+
+.fieldgroup-effects-processed {
+	padding-left: 14px;
+	background-image: url(images/down-arrow.png);
+	background-repeat: no-repeat;
+	background-position-y: 4px;
+	clear: left;
+}
+
+.fieldgroup-effects-processed.group-event-reqs {
+	background-position-y: 24px;
+	background-position-x: 14px;
+	padding-left: 28px;
+}
+
+.fieldgroup-effects-processed.collapsed {
+	background-image: url(images/right-arrow.png);
+}
+
+.field-name-field-talk-speaker, .field-name-field-participant-name {
+	font-weight: bold;
+	float: left;
+	display: inline;
+}
+.field-name-field-talk-speaker-university {
+	font-style: italic;
+	float: left;
+	display: inline;
+}
+.field-name-field-participant-affiliation {
+	clear: left;
+	display: block;
+		font-style: italic;
+}
+.field-name-field-talk-title {
+	font-size: 1.3em;
+	line-height: 1.15em;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 0;
+}
+.field-collection-view {
+padding: 0 0 0.3em 0;
+}
+.nav {
+	clear: none;
+	padding-top: 8px;
+}
+
+ul.primary-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 33px;	
+	float: left;
+	position: relative;
+}
+
+.nav li {
+margin: 0 5px 5px 0;
+float: left;
+position: relative;
+z-index: 40;
+}
+
+.nav li a {
+height: 33px;
+margin: 0 5px;
+line-height: 35px;
+color: white;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+font-weight: normal;
+padding: 0 20px!important;
+border-radius: 3px;
+-webkit-transition: background-color .1s linear, color .1s linear;
+-moz-transition: background-color .1s linear, color .1s linear;
+-o-transition: background-color .1s linear, color .1s linear;
+-ms-transition: background-color .1s linear, color .1s linear;
+transition: background-color .1s linear, color .1s linear;
+display: block;
+position: relative;
+text-decoration: none;
+text-transform: uppercase;
+font-family: "Droid Sans", sans-serif;
+font-size: 1.1em;
+}
+
+.nav li a:hover, .nav li a.active {
+text-decoration: none;
+color: white;
+background: #3B3B3B;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+	float: left;
+	margin-right: 40px;
+	width: 260px;
+<<<<<<< HEAD
+	margin-left: 10px;
+=======
+	margin-left: 5px;
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+}
+
+.section-about-us .region-sidebar-second {
+	width: 60%;
+	margin-left: -60%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 60%;
+margin-left: 0;
+}
+
+.section-about-us .view-about-us-blocks .views-row-odd {
+	width: 47%;
+	margin-right: 3%;
+	float: left;
+}
+.section-about-us drush sql-sync @local.dr @dev.dr.view-about-us-blocks .views-row-even {
+	width: 47%;
+	margin-left: 3%;
+	float: left;
+}
+.divlinker {
+	width: 25%;
+	float: left;
+}
+<<<<<<< HEAD
+=======
+.content-inner .block.divlinker {
+	margin-top: 15px;
+}
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+.divlinker .block-inner {
+	position: relative;
+}
+.divlinker .block-inner:hover {
+	background-color: #ACAAAD;
+}
+
+.big-button {
+	position: absolute;
+	display: block;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+<<<<<<< HEAD
+=======
+}
+
+ul.primary {
+border-bottom: none;
+}
+
+ul.primary li.active {
+	display: none;
+>>>>>>> f88d3d91510c2a78db156c0b0438a822d9d52fcc
+}

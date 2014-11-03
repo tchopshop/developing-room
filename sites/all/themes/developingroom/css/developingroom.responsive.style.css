@@ -1,0 +1,220 @@
+/**
+ * Use this file to conditionally override styles for devices.
+ * If you adjust the media queries in the theme settings you should
+ * adjust them here so they match.
+ */
+
+/* Smartphone portrait */
+@media only screen and (max-width:320px) {
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+.divlinker {
+	width: 100%;
+	float: left;
+}
+#topbar {
+    border:none;
+    height: 0px;
+}
+#header-wrapper {
+    padding-top:5px;
+}
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+#primary-menu-bar {
+	display: none;
+}
+#block-block-2 .menu-wrapper {
+	display: block;
+}
+#block-block-2 .menu-wrapper select {
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+#logo {
+	width: 200px;
+}
+
+}
+
+/* Smartphone landscape */
+@media only screen and (min-width:321px) and (max-width:480px) {
+
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+#block-block-2 .menu-wrapper {
+	display: block;
+}
+
+#block-block-2 .menu-wrapper select {
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+#block-block-2 .menu-wrapper input {
+	float: left;
+}
+#topbar {
+    border:none;
+    height: 0px;
+}
+#header-wrapper {
+    padding-top:5px;
+}
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+.divlinker {
+	width: 100%;
+	float: left;
+}
+#primary-menu-bar {
+	display: none;
+}
+#logo {
+	width: 200px;
+}
+.nav {
+	padding-top: 2px;
+}
+
+
+}
+
+/* Tablet portrait */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+.columns-inner {
+	position: relative;
+}
+
+.region-sidebar-first {
+margin-left: 0!important;
+}
+
+.section-about-us .region-sidebar-second {
+	width: 100%;
+	margin-left: 0%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 0%;
+margin-left: 0;
+}
+.divlinker {
+	width: 50%;
+	float: left;
+}
+#block-views-about-us-blocks-block-2 {
+	width: 100%;
+}
+#block-block-2 .menu-wrapper {
+	display: block;
+}
+
+#block-block-2 .menu-wrapper select {
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+#block-block-2 .menu-wrapper input {
+	float: left;
+}
+#primary-menu-bar {
+	display: none;
+}
+.nav {
+	padding-top: 2px;
+}
+.nav li a {
+margin: 0 2px;
+padding: 0 5px!important;
+font-size: 1em;
+}
+#logo {
+	width: 250px;
+	margin-right: 30px;
+}
+
+
+}
+
+/* Tablet landscape */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+.section-about-us .region-sidebar-second {
+	width: 50%;
+	margin-left: -50%;
+}
+
+.section-about-us #content-column .content-inner {
+margin-right: 50%;
+margin-left: 0;
+}
+
+.section-about-us .view-about-us-blocks .views-row-odd, .section-about-us .view-about-us-blocks .views-row-even {
+	width: 100%;
+	float: left;
+}
+.divlinker {
+	width: 33%;
+	float: left;
+}
+#block-views-about-us-blocks-block-2 {
+	width: 99%;
+}
+#menu-bar {
+	display: none;
+}
+.nav li a {
+margin: 0 3px;
+padding: 0 5px!important;
+font-size: 1em;
+}
+#logo {
+	width: 250px;
+}
+.nav {
+	padding-top: 10px;
+}
+
+
+}
+
+/* Standard layout */
+@media only screen and (min-width:1025px) {
+#menu-bar {
+	display: none;
+}
+.divlinker {
+	width: 33%;
+	float: left;
+}
+#block-views-about-us-blocks-block-2 {
+	width: 99%;
+}
+.nav li a {
+margin: 0 4px;
+}
+#flash-div {
+    margin-left: -120px;
+}
+
+
+}

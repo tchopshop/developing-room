@@ -1,0 +1,27 @@
+<?php 
+
+/**
+ * Implements hook_schema().
+ */
+function hideblock_schema() {
+    $schema['hideblock'] = array(
+        'description' => "Table for marking blocks hidden",
+        'fields' => array(
+            'hid' => array(
+                'description' => "Hide id",
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+                ),
+            'delta' => array(
+                'type' => 'varchar',
+                'length' => 64,
+                'not null' => TRUE,
+                'default' => '0',
+                'description' => 'Unique ID for block within a module.',
+             ),
+            ),
+            'primary key' => array('hid'),
+       );
+    return $schema;
+}
